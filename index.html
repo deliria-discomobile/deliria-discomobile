@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DJ professionnel dans le Tarn - Animation musicale pour vos soirées, mariages et fêtes de village. Spécialiste en discomobile Deliria. Disponible à Albi, Gaillac et dans tout le Tarn.">
+    <meta name="keywords" content="DJ Tarn, Discomobile Deliria, DJ Albi, DJ Gaillac, Fête de village Tarn, Animation musicale, Mariage Tarn, Soirée privée, Événement musical">
+    <title>DJ Professionnel Tarn - Animation musicale pour vos événements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .equipment-card {
+            transition: all 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-compact-disc text-purple-500 text-2xl"></i>
+                <span class="font-bold text-xl">DJ Tarn</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="hover:text-purple-400 transition">Accueil</a>
+                <a href="#presentation" class="hover:text-purple-400 transition">Présentation</a>
+                <a href="#galerie" class="hover:text-purple-400 transition">Galerie</a>
+                <a href="#equipement" class="hover:text-purple-400 transition">Équipement</a>
+                <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-black pb-4" id="mobile-menu">
+            <div class="flex flex-col space-y-3 px-4">
+                <a href="#accueil" class="hover:text-purple-400 transition">Accueil</a>
+                <a href="#presentation" class="hover:text-purple-400 transition">Présentation</a>
+                <a href="#galerie" class="hover:text-purple-400 transition">Galerie</a>
+                <a href="#equipement" class="hover:text-purple-400 transition">Équipement</a>
+                <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">DJ Professionnel dans le Tarn</h1>
+            <p class="text-xl md:text-2xl mb-8">Animation musicale pour vos mariages, soirées privées et fêtes de village avec la discomobile Deliria</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 pulse-animation">
+                    Réserver maintenant
+                </a>
+                <a href="#presentation" class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation Section -->
+    <section id="presentation" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Présentation</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="DJ en action" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">DJ Tarn - Votre animateur musical dans le Tarn</h3>
+                    <p class="text-gray-700 mb-4">
+                        Passionné de musique depuis toujours, je propose mes services de DJ professionnel pour animer vos événements dans tout le Tarn, notamment à Albi et Gaillac.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Spécialisé dans l'animation de mariages, fêtes de village et soirées privées, je m'adapte à tous les publics et à toutes les ambiances pour faire de votre événement un moment inoubliable.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Avec ma discomobile Deliria, je me déplace partout dans le Tarn pour vous offrir une prestation de qualité avec un équipement professionnel et une sélection musicale adaptée à vos goûts.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Mariages</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Fêtes de village</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Soirées privées</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Anniversaires</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8">Mes Services</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-purple-600 text-4xl mb-4">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Animation musicale</h4>
+                        <p class="text-gray-700">
+                            Sélection musicale adaptée à votre événement et à votre public. Tous styles musicaux possibles selon vos préférences.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-purple-600 text-4xl mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Éclairage professionnel</h4>
+                        <p class="text-gray-700">
+                            Ambiance lumineuse professionnelle avec des effets adaptés à chaque moment de votre soirée.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-purple-600 text-4xl mb-4">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Animation micro</h4>
+                        <p class="text-gray-700">
+                            Animation vocale pour rythmer votre soirée, annonces et interactions avec vos invités.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Section -->
+    <section id="galerie" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Galerie</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Discomobile Deliria en action" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">Discomobile Deliria</h3>
+                        <p class="text-gray-600 text-sm">Équipement professionnel pour vos événements</p>
+                    </div>
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+                         alt="Mariage dans le Tarn" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">Animation mariage</h3>
+                        <p class="text-gray-600 text-sm">Ambiance musicale pour votre grand jour</p>
+                    </div>
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1516450360452-931c412a81a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Fête de village" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">Fête de village</h3>
+                        <p class="text-gray-600 text-sm">Animation pour vos événements publics</p>
+                    </div>
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="DJ en action" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">DJ en action</h3>
+                        <p class="text-gray-600 text-sm">Mix et animation pour votre soirée</p>
+                    </div>
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Éclairage professionnel" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">Éclairage professionnel</h3>
+                        <p class="text-gray-600 text-sm">Ambiance lumineuse pour votre événement</p>
+                    </div>
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Soirée privée" 
+                         class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <h3 class="font-bold">Soirée privée</h3>
+                        <p class="text-gray-600 text-sm">Animation sur mesure pour vos invités</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    Voir plus de photos et réserver
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipement Section -->
+    <section id="equipement" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Mon Équipement</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="equipment-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Discomobile Deliria</h3>
+                    <p class="text-gray-700 mb-4">
+                        Véhicule équipé spécialement aménagé pour l'animation musicale avec accès facile et esthétique professionnelle.
+                    </p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Système audio haute puissance</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Éclairage intégré</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Plateforme sécurisée</li>
+                    </ul>
+                </div>
+                
+                <div class="equipment-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Système Audio</h3>
+                    <p class="text-gray-700 mb-4">
+                        Matériel professionnel haute qualité pour un son clair et puissant adapté à tous types d'événements.
+                    </p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Enceintes actives 1000W</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Table de mixage professionnelle</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Microphones sans fil</li>
+                    </ul>
+                </div>
+                
+                <div class="equipment-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Éclairage & Effets</h3>
+                    <p class="text-gray-700 mb-4">
+                        Jeux de lumières professionnels pour créer l'ambiance parfaite et dynamiser votre soirée.
+                    </p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Moving heads</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Lasers</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i> Machines à fumée</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-purple-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-center mb-6">Pourquoi choisir mes services ?</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-purple-800"><i class="fas fa-star text-purple-500 mr-2"></i> Expérience</h4>
+                        <p class="text-gray-700">
+                            Plus de 10 ans d'expérience dans l'animation musicale dans tout le Tarn, avec des centaines d'événements à mon actif.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-purple-800"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i> Mobilité</h4>
+                        <p class="text-gray-700">
+                            Je me déplace dans tout le Tarn (Albi, Gaillac, Castres, Carmaux...) et départements limitrophes pour votre événement.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-purple-800"><i class="fas fa-music text-purple-500 mr-2"></i> Répertoire varié</h4>
+                        <p class="text-gray-700">
+                            Large sélection musicale couvrant tous les styles et toutes les époques, adaptée à votre public.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-purple-800"><i class="fas fa-euro-sign text-purple-500 mr-2"></i> Tarifs compétitifs</h4>
+                        <p class="text-gray-700">
+                            Prestations de qualité à des prix raisonnables, avec des formules adaptées à tous les budgets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Témoignages</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "DJ Tarn a animé notre mariage à Albi et tout était parfait ! La musique était adaptée à tous nos invités, des plus jeunes aux plus âgés. La discomobile Deliria est vraiment impressionnante."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="font-bold">Marie & Pierre</div>
+                        <div class="ml-auto text-sm text-gray-500">Mariage - Juin 2023</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Pour notre fête de village près de Gaillac, nous avons fait appel à DJ Tarn et ce fut un succès ! Tout le monde a dansé jusqu'au bout de la nuit. Professionnel et à l'écoute."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="font-bold">Comité des fêtes</div>
+                        <div class="ml-auto text-sm text-gray-500">Fête village - Août 2023</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Soirée d'entreprise animée avec brio. DJ Tarn a su créer une ambiance conviviale et adaptée à notre public. Le matériel est de qualité professionnelle."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="font-bold">Entreprise Tarnaise</div>
+                        <div class="ml-auto text-sm text-gray-500">Soirée entreprise - Décembre 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-purple-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact & Réservation</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Réservation</h3>
+                    <p class="mb-6">
+                        Pour réserver mes services de DJ ou obtenir un devis personnalisé pour votre événement dans le Tarn, remplissez le formulaire ou contactez-moi directement.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-xl mr-4 mt-1">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Téléphone</h4>
+                                <p>06 12 34 56 78</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p>contact@djtarn.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Zone d'intervention</h4>
+                                <p>Tout le Tarn (Albi, Gaillac, Castres, Carmaux...) et départements limitrophes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-xl mb-4">Suivez-moi sur les réseaux</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white text-purple-700 hover:bg-purple-100 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-white text-purple-700 hover:bg-purple-100 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white text-purple-700 hover:bg-purple-100 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="name">Nom</label>
+                            <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="phone">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="event">Type d'événement</label>
+                            <select id="event" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="fete-village">Fête de village</option>
+                                <option value="soiree-privee">Soirée privée</option>
+                                <option value="entreprise">Événement d'entreprise</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="date">Date de l'événement</label>
+                            <input type="date" id="date" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                            Envoyer la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Questions Fréquentes</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="font-bold text-left">Quels sont vos tarifs pour une animation DJ ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">
+                            Mes tarifs varient en fonction de plusieurs critères : type d'événement, durée, localisation, équipement nécessaire. Pour un mariage dans le Tarn, comptez entre 800€ et 1500€ selon les options choisies. Je propose toujours un devis personnalisé après discussion de vos besoins.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="font-bold text-left">Peut-on choisir les musiques qui seront jouées ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">
+                            Absolument ! Avant chaque événement, nous établissons ensemble une playlist des musiques que vous souhaitez entendre, ainsi qu'une liste des titres à éviter. Je m'adapte à vos goûts musicaux tout en gardant la liberté d'improviser selon l'ambiance et les réactions des invités.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="font-bold text-left">Quelle est la zone géographique que vous couvrez ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">
+                            Je me déplace principalement dans tout le département du Tarn (Albi, Gaillac, Castres, Carmaux, Lavaur...). Pour les départements limitrophes (Aveyron, Haute-Garonne, Tarn-et-Garonne), des frais de déplacement peuvent s'appliquer en fonction de la distance.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="font-bold text-left">Quel est le délai minimum pour réserver ?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">
+                            Je recommande de réserver au moins 3 mois à l'avance pour les mariages en haute saison (mai à septembre). Pour les autres événements, un préavis d'un mois est généralement suffisant, mais n'hésitez pas à me contacter même en urgence, je verrai ce qu'il est possible de faire !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-compact-disc text-purple-500 text-2xl"></i>
+                        <span class="font-bold text-xl">DJ Tarn</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Animation musicale professionnelle dans le Tarn avec la discomobile Deliria. Mariages, fêtes de village, soirées privées.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Liens utiles</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+                        <li><a href="#presentation" class="text-gray-400 hover:text-white transition">Présentation</a></li>
+                        <li><a href="#galerie" class="text-gray-400 hover:text-white transition">Galerie</a></li>
+                        <li><a href="#equipement" class="text-gray-400 hover:text-white transition">Équipement</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Mots-clés</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">DJ Tarn</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">Discomobile Deliria</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">DJ Albi</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">DJ Gaillac</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">Fête de village Tarn</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">Animation musicale</span>
+                        <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">Mariage Tarn</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-purple-500"></i>
+                            <span>06 12 34 56 78</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-purple-500"></i>
+                            <span>contact@djtarn.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-purple-500"></i>
+                            <span>Tarn (81), France</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2023 DJ Tarn - Tous droits réservés
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission (simulated)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
